@@ -31,7 +31,7 @@ h1 span {
     position: relative;
 }
 .container-btns {
-    position: relative;
+    position: absolute left;
     top: 50px;
 }
 .btn-first {
