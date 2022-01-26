@@ -7,14 +7,10 @@
 }
 
 body {
-    background: #333;
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
-    background: url('IMG/02.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    overflow-x: hidden;
+    background: url('/IMG/Space.jpg');
 }
 
 .container-first {
@@ -28,36 +24,29 @@ h1 {
     font-size: 90px;
     color: #ffffff;
     font-family: 'Press Start 2P', cursive;
+    margin-top: -125px;
 }
 
 h1 span {
     position: relative;
 }
 
-.container-btns {
-    position: absolute left;
-    top: 50px;
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 370px;
 }
 
-.btn-first {
-    border: 2px solid #ffffff;
-    outline: none;
-    background: transparent;
-    font-size: 30px;
-    padding: 20px;
-    width: 300px;
-    color: #ffffff;
-    cursor: pointer;
+h3 {
+    text-align: center;
+    font-size: 15px;
+    opacity: 20%;
+    color: white;
 }
 
-.btn-first:nth-child(1) {
-    margin-right: 30px;
-}
-
-.btn-first:hover {
-    transition: all 0.3s ease-in-out;
-    background: #000000;
-    color: #333;
+li {
+    font-size: 25px;
+    color: white;
 }
 
 .logo {
@@ -98,4 +87,32 @@ h1 span {
 .logo-medias {
     width: 50px;
     height: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    width: 120px;
+    display: block;
+    padding: 10px 20px;
+    font-size: 15;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background: transparent;
 }
