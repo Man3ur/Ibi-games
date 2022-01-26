@@ -31,8 +31,8 @@ h1 span {
     position: relative;
 }
 .container-btns {
-    position: relative;
-    top: 50px;
+    position: left;
+    top: 80px;
 }
 .btn-first {
     border: 2px solid #ffffff;
