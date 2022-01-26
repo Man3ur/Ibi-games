@@ -10,7 +10,7 @@ body {
     background: #333;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
-    background: url('IMG1/Bg.png');
+    background: url('/Games/IMG1/Bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -27,7 +27,7 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     font-size: 50px;
-    color: #000000;
+    color: #ffffff;
     font-family: 'Rubik Beastly', cursive;
 }
 
@@ -37,39 +37,14 @@ h1 span {
 
 h2 {
     text-align: center;
+    color: white;
 }
 
 h3 {
+    color: white;
     text-align: center;
     font-size: 15px;
     opacity: 20%;
-}
-
-.container-btns {
-    position: absolute;
-    top: -250px;
-    right: -290px;
-}
-
-.btn-first {
-    border: 2px solid #000000;
-    outline: none;
-    background: transparent;
-    font-size: 30px;
-    padding: 20px;
-    width: 300px;
-    color: #000000;
-    cursor: pointer;
-}
-
-.btn-first:nth-child(1) {
-    margin-right: 30px;
-}
-
-.btn-first:hover {
-    transition: all 0.3s ease-in-out;
-    background: #3d3d3d;
-    color: #333;
 }
 
 .logo {
@@ -95,4 +70,32 @@ h3 {
 .images {
     text-align: center;
     margin: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    width: 120px;
+    display: block;
+    padding: 10px 20px;
+    font-size: 15;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background: transparent;
 }
