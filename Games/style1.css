@@ -42,7 +42,7 @@ h1 span {
     padding: 20px;
     width: 300px;
     color: #000000;
-    cursor: pointer;
+    cursor: zoom-in;
 }
 .btn-first:nth-child(1){
     margin-right: 30px;
