@@ -10,7 +10,7 @@ body {
     background: #333;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
-    background: url('/Games/IMG1/Bg.png');
+    background: url('IMG2/Sky.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -41,10 +41,15 @@ h2 {
 }
 
 h3 {
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     font-size: 15px;
     opacity: 20%;
+}
+
+li {
+    font-size: 25px;
+    color: white;
 }
 
 .logo {
@@ -98,4 +103,8 @@ h3 {
 
 .navbar a:hover {
     background: transparent;
+}
+
+a {
+    text-size-adjust: 25;
 }
