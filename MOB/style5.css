@@ -120,13 +120,13 @@
             overflow: hidden;
         }
         #copyright {
-            margin-top: 24cm;
-            margin-right: 44cm;
+            margin-top: 23cm;
+            margin-right: 43cm;
             position: absolute;
             font-weight: 600;
             font-size: 0.8em;
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            opacity: 15%;
+            opacity: 13%;
         }
         #youtube:hover+#youtube-card {
             display: block;
