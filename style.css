@@ -19,9 +19,13 @@ body {
     left: 5%;
 }
 
+html {
+    --res: calc(0.01* 10vmin);
+}
+
 h1 {
     text-transform: uppercase;
-    font-size: 90px;
+    font-size: calc(90 * var(--res));
     color: #ffffff;
     font-family: 'Press Start 2P', cursive;
     margin-top: -125px;
@@ -47,7 +51,7 @@ h3 {
 }
 
 li {
-    font-size: 25px;
+    font-size: calc(25 * var(--res));
     color: white;
 }
 
