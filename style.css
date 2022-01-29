@@ -23,9 +23,13 @@ html {
     --res: calc(0.01* 10vmin);
 }
 
+img {
+    font-size: clamp(35px, 5vw, 90px);
+}
+
 h1 {
     text-transform: uppercase;
-    font-size: calc(90 * var(--res));
+    font-size: clamp(35px, 5vw, 90px);
     color: #ffffff;
     font-family: 'Press Start 2P', cursive;
     margin-top: -125px;
@@ -51,7 +55,7 @@ h3 {
 }
 
 li {
-    font-size: calc(25 * var(--res));
+    font-size: clamp(1px, 5vw, 25px);
     color: white;
 }
 
