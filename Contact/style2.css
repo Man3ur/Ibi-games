@@ -58,6 +58,7 @@ h3 {
     opacity: 20%;
     color: white;
     text-transform: uppercase;
+    opacity: 10%;
     margin-top: 30px;
 }
 
@@ -72,8 +73,12 @@ h4 {
     margin-top: 30px;
 }
 
+img {
+    font-size: clamp(35px, 5vw, 90px);
+}
+
 li {
-    font-size: 25px;
+    font-size: clamp(20px, 5vw, 25px);
     color: white;
 }
 
