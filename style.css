@@ -29,7 +29,7 @@ img {
 
 h1 {
     text-transform: uppercase;
-    font-size: clamp(35px, 5vw, 90px);
+    font-size: clamp(20px, 5vw, 90px);
     color: #ffffff;
     font-family: 'Press Start 2P', cursive;
     margin-top: -125px;
@@ -55,7 +55,7 @@ h3 {
 }
 
 li {
-    font-size: clamp(1px, 5vw, 25px);
+    font-size: clamp(20px, 5vw, 25px);
     color: white;
 }
 
@@ -125,4 +125,114 @@ li {
 
 .navbar a:hover {
     background: transparent;
+}
+
+
+/* add blocker*/
+
+::selection {
+    color: #fff;
+    background: #118fe2;
+}
+
+.wrapper {
+    position: absolute;
+    max-width: 480px;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    padding: 40px 30px;
+    background: #fff;
+    border-radius: 15px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(1.2);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.06);
+    transition: opacity 0.2s 0s ease-in-out, transform 0.2s 0s ease-in-out;
+}
+
+.wrapper.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.wrapper .content,
+.content .warn-icon,
+.warn-icon .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .content {
+    flex-direction: column;
+}
+
+.content .warn-icon {
+    height: 115px;
+    width: 115px;
+    border-radius: 50%;
+    background: -webkit-linear-gradient(135deg, #00aeff, #6200ff, #118fe2, #1900ff);
+}
+
+.warn-icon .icon {
+    height: 100px;
+    width: 100px;
+    background: #fff;
+    border-radius: inherit;
+}
+
+.warn-icon .icon i {
+    background: -webkit-linear-gradient(135deg, #00aeff, #6200ff, #118fe2, #1900ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+}
+
+h4 {
+    margin-top: 35px;
+    font-size: 32px;
+}
+
+.content p {
+    font-size: 19px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    height: 57px;
+    width: 223px;
+    margin-top: 30px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn .bg-layer {
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    background: -webkit-linear-gradient(135deg, #00aeff, #6200ff, #118fe2, #1900ff);
+    transition: all 0.4s ease;
+}
+
+.btn:hover .bg-layer {
+    left: 0;
+}
+
+.content button {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background: none;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
 }
