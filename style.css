@@ -29,7 +29,7 @@ img {
 
 h1 {
     text-transform: uppercase;
-    font-size: clamp(20px, 5vw, 90px);
+    font-size: clamp(20px, 11vw, 90px);
     color: #ffffff;
     font-family: 'Press Start 2P', cursive;
     margin-top: -125px;
@@ -157,8 +157,20 @@ li {
     transform: translate(-50%, -50%) scale(1);
 }
 
-.wrapper .content,
-.content .warn-icon,
+.wrapper .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content .warn-icon {
+    height: 115px;
+    width: 115px;
+    background-color: linear-gradient(#00aeff, #6200ff, #118fe2, #1900ff);
+}
+
+.warn-icon span,
 .warn-icon .icon {
     display: flex;
     align-items: center;
@@ -170,10 +182,25 @@ li {
 }
 
 .content .warn-icon {
-    height: 115px;
-    width: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( #00aeff, #6200ff, #118fe2, #1900ff);
     border-radius: 50%;
-    background: -webkit-linear-gradient(135deg, #00aeff, #6200ff, #118fe2, #1900ff);
+}
+
+.warn-icon span {
+    height: 100px;
+    width: 100px;
+    background: #fff;
+    border-radius: inherit;
+}
+
+.warn-icon span i {
+    font-size: 50px;
+    background: linear-gradient( #00aeff, #6200ff, #118fe2, #1900ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .warn-icon .icon {
