@@ -119,8 +119,8 @@
     const cookieBox = document.querySelector(".wraper"),
         acceptBtn = cookieBox.querySelector("button");
     acceptBtn.onclick = () => {
-        //setting cookie for 20 day, after one month it'll be expired automatically
-        document.cookie = "CookieBy=Ibidium; max-age=" + 60 * 60 * 24 * 20;
+        //setting cookie for 2 month, after one month it'll be expired automatically
+        document.cookie = "CookieBy=Ibidium; max-age=" + 60 * 60 * 24 * 60;
         if (document.cookie) { //if cookie is set
             cookieBox.classList.add("hide"); //hide cookie box
         } else { //if cookie not set then alert an error
