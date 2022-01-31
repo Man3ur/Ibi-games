@@ -61,6 +61,7 @@
     <h3>(c)2021-2024 Ibidium</h3>
 </div>
 
+<!--AdBlock-->
 <div id="detect"></div>
 <div class="wrapper">
     <div class="content">
@@ -91,6 +92,8 @@
         wrapper.classList.remove("show");
     });
 </script>
+<!--AdBlock-->
+
 <!-- Pub -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5958870890697271" crossorigin="anonymous"></script>
 <!-- Pub -->
@@ -99,6 +102,35 @@
     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <!-- Pub -->
+
+<!--cookies-->
+<div class="wraper">
+    <img src="#" alt="">
+    <div class="conten">
+        <header>Cookies Consent</header>
+        <p>This website use cookies to ensure you get the best experience on our website.</p>
+        <div class="buttons">
+            <button class="item">I understand</button>
+            <a href="#" class="item">Learn more</a>
+        </div>
+    </div>
+</div>
+<script>
+    const cookieBox = document.querySelector(".wraper"),
+        acceptBtn = cookieBox.querySelector("button");
+    acceptBtn.onclick = () => {
+        //setting cookie for 20 day, after one month it'll be expired automatically
+        document.cookie = "CookieBy=Ibidium; max-age=" + 60 * 60 * 24 * 20;
+        if (document.cookie) { //if cookie is set
+            cookieBox.classList.add("hide"); //hide cookie box
+        } else { //if cookie not set then alert an error
+            alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
+        }
+    }
+    let checkCookie = document.cookie.indexOf("CookieBy=Ibidium"); //checking our cookie
+    //if cookie is set then hide the cookie box else show it
+    checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
+</script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 <script src="app.js"></script>

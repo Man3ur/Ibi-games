@@ -7,6 +7,7 @@
     <title>Ibi Games</title>
     <link rel="shortcut icon" href="/IMG/Icone.png" type="images/png" />
     <link rel="stylesheet" href="/Contact/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5958870890697271" crossorigin="anonymous"></script>
 </head>
@@ -57,6 +58,39 @@
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
     <!-- Pub -->
+
+    <!--AdBlock-->
+    <div id="detect"></div>
+    <div class="wrapper">
+        <div class="content">
+            <div class="warn-icon">
+                <span><i class="fas fa-exclamation"></i></span>
+            </div>
+            <h4>AdBlock Detected!</h4>
+            <p>Our website is made possible by displaying ads to our visitors. Please supporting us by whitelisting our website.</p>
+            <div class="btn">
+                <div class="bg-layer"></div>
+                <button>Okay, I'll Whitelist</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const detect = document.querySelector("#detect");
+        const wrapper = document.querySelector(".wrapper");
+        const button = wrapper.querySelector("button");
+        let adClasses = ["ad", "ads", "adsbox", "doubleclick", "ad-placement", "ad-placeholder", "adbadge", "BannerAd"];
+        for (let item of adClasses) {
+            detect.classList.add(item);
+        }
+        let getProperty = window.getComputedStyle(detect).getPropertyValue("display");
+        if (!wrapper.classList.contains("show")) {
+            getProperty == "none" ? wrapper.classList.add("show") : wrapper.classList.remove("show");
+        }
+        button.addEventListener("click", () => {
+            wrapper.classList.remove("show");
+        });
+    </script>
+    <!--AdBlock-->
 
 </body>
 
