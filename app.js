@@ -21,4 +21,6 @@ window.addEventListener('load', () => {
 
 
     TL.play();
+
+    localStorage.setItem('cookie');
 })
