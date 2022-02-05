@@ -108,35 +108,6 @@
 </script>
 <!-- Pub -->
 
-<!--cookies-->
-<div class="wraper">
-    <img src="#" alt="">
-    <div class="conten">
-        <header>Cookies Consent</header>
-        <p>This website use cookies to ensure you get the best experience on our website.</p>
-        <div class="buttons">
-            <button class="item">I understand</button>
-            <a href="/Conditions" class="item">Learn more</a>
-        </div>
-    </div>
-</div>
-<script>
-    const cookieBox = document.querySelector(".wraper"),
-        acceptBtn = cookieBox.querySelector("button");
-    acceptBtn.onclick = () => {
-        //setting cookie for 5 month, after one month it'll be expired automatically
-        document.cookie = "Cookie=Ibidium; max-age=" + 60 * 60 * 24 * 150;
-        if (document.cookie) { //if cookie is set
-            cookieBox.classList.add("hide"); //hide cookie box
-        } else { //if cookie not set then alert an error
-            alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
-        }
-    }
-    let checkCookie = document.cookie.indexOf("Cookie=Ibidium"); //checking our cookie
-    //if cookie is set then hide the cookie box else show it
-    checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
-</script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 <script src="/app.js"></script>
 </body>
