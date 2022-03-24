@@ -282,9 +282,21 @@
     /*Tel*/
     
     @media(max-width: 800px) {
-        .card {}
-        .card2 {}
-        .card3 {}
-        .card4 {}
+        .card {
+            margin-top: 20px;
+            margin-left: 90px;
+        }
+        .card2 {
+            margin-top: 50px;
+            margin-left: 0px;
+        }
+        .card3 {
+            margin-top: 50px;
+            margin-left: 0px;
+        }
+        .card4 {
+            margin-top: 50px;
+            margin-left: 0px;
+        }
     }
     /*Tel*/
