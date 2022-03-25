@@ -98,3 +98,21 @@ li {
     width: 50px;
     height: 50px;
 }
+
+@media(max-width: 1700px) {
+    .medias {
+        right: 37.5%;
+        top: 42.5%;
+        transform: translateY(-50%);
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 1500px) {
+    .medias {
+        right: 60%;
+        top: 58.5%;
+        transform: translateY(-50%);
+        flex-direction: row;
+    }
+}
