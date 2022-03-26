@@ -25,7 +25,7 @@ iframe {
     flex-wrap: wrap;
     width: 100%;
     max-width: 9000px;
-    margin: 70px auto 0;
+    margin: 20px auto 0;
     /*background: crimson;*/
 }
 
@@ -35,5 +35,9 @@ iframe {
         margin-left: 50px;
         margin-top: 50px;
         flex-shrink: 8;
+    }
+    .videos {
+        margin: 0px auto 0;
+        /*background: crimson;*/
     }
 }

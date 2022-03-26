@@ -7,6 +7,7 @@
     --toggle-color: #DDD;
     --text-color: #707070;
     --card-color: #cacaca;
+    --blog-color: rgba(28, 26, 23, 0.4);
     /* ====== Transition ====== */
     --tran-03: all 0.2s ease;
     --tran-03: all 0.3s ease;
@@ -27,6 +28,7 @@ body.dark {
     --toggle-color: #fff;
     --text-color: #ccc;
     --card-color: rgb(68, 68, 68);
+    --blog-color: #fff;
 }
 
 
