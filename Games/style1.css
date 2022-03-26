@@ -116,16 +116,10 @@
         text-size-adjust: 25;
     }
     
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-    
     .card {
-        margin-top: 20px;
-        margin-left: 200px;
-        width: 240px;
+        margin-top: 50px;
+        margin-left: 400px;
+        width: 300px;
         height: 320px;
         perspective: 1000px;
         text-align: center;
@@ -186,7 +180,7 @@
     
     .card-back {
         transform: rotateY(180deg);
-        background: rgb(79, 79, 79);
+        background-color: var(--card-color);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -247,7 +241,7 @@
     .card2 {
         margin-top: -320px;
         margin-left: 400px;
-        width: 240px;
+        width: 300px;
         height: 320px;
         perspective: 1000px;
         text-align: center;
@@ -257,7 +251,7 @@
     .card3 {
         margin-top: -320px;
         margin-left: 400px;
-        width: 240px;
+        width: 300px;
         height: 320px;
         perspective: 1000px;
         text-align: center;
@@ -265,9 +259,27 @@
     /* carte 4 */
     
     .card4 {
+        margin-top: 100px;
+        margin-left: -800px;
+        width: 300px;
+        height: 320px;
+        perspective: 1000px;
+        text-align: center;
+    }
+    
+    .card5 {
         margin-top: -320px;
-        margin-left: 400px;
-        width: 240px;
+        margin-left: -400px;
+        width: 300px;
+        height: 320px;
+        perspective: 1000px;
+        text-align: center;
+    }
+    
+    .card6 {
+        margin-top: -320px;
+        margin-left: 0px;
+        width: 300px;
         height: 320px;
         perspective: 1000px;
         text-align: center;
@@ -302,3 +314,7 @@
         }
     }
     /*Tel*/
+    /*res*/
+    
+    @media(max-width: 1600px) {}
+    /*res*/
