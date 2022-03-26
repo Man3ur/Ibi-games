@@ -1,0 +1,23 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+iframe {
+    margin-top: 100px;
+    margin-left: 700px;
+}
+
+.videos {
+    margin-bottom: 100px;
+}
