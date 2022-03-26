@@ -62,7 +62,7 @@
     .logo {
         position: absolute;
         right: 2.9%;
-        top: 4%;
+        top: -4%;
         width: 65px;
         height: 65px;
     }
@@ -117,12 +117,12 @@
     }
     
     .card {
-        margin-top: 50px;
-        margin-left: 400px;
-        width: 300px;
+        width: 325px;
         height: 320px;
+        margin: 20px;
         perspective: 1000px;
         text-align: center;
+        flex-shrink: 0;
     }
     
     .card-inner {
@@ -236,85 +236,32 @@
     .card:hover .card-front {
         opacity: 0;
     }
-    /* carte 2 */
     
-    .card2 {
-        margin-top: -320px;
-        margin-left: 400px;
-        width: 300px;
-        height: 320px;
-        perspective: 1000px;
-        text-align: center;
+    .tout {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 75%;
+        max-width: 9000px;
+        margin: 70px auto 0;
+        /* background: crimson;*/
     }
-    /* carte 3 */
-    
-    .card3 {
-        margin-top: -320px;
-        margin-left: 400px;
-        width: 300px;
-        height: 320px;
-        perspective: 1000px;
-        text-align: center;
-    }
-    /* carte 4 */
-    
-    .card4 {
-        margin-top: 100px;
-        margin-left: -800px;
-        width: 300px;
-        height: 320px;
-        perspective: 1000px;
-        text-align: center;
-    }
-    
-    .card5 {
-        margin-top: -320px;
-        margin-left: -400px;
-        width: 300px;
-        height: 320px;
-        perspective: 1000px;
-        text-align: center;
-    }
-    
-    .card6 {
-        margin-top: -320px;
-        margin-left: 0px;
-        width: 300px;
-        height: 320px;
-        perspective: 1000px;
-        text-align: center;
-    }
-    /*Ipad*/
-    
-    @media(max-width: 1000px) {
-        .card3 {
-            margin-top: 100px;
-            margin-left: -400px;
-        }
-    }
-    /*Ipad*/
     /*Tel*/
     
-    @media(max-width: 800px) {
+    @media (max-width: 800px) {
         .card {
-            margin-top: -30px;
-            margin-left: 90px;
+            width: 325px;
+            height: 320px;
+            margin: 10px;
+            perspective: 1000px;
+            text-align: center;
+            flex-shrink: 0;
         }
-        .card2 {
-            margin-top: 50px;
-            margin-left: 0px;
+        .tout {
+            margin: 30px auto 0;
         }
-        .card3 {
-            margin-top: 50px;
-            margin-left: 0px;
-        }
-        .card4 {
-            margin-top: 50px;
-            margin-left: 0px;
+        .logo {
+            opacity: 0;
         }
     }
     /*Tel*/
-    /*res*/
-    
-    @media(max-width: 1600px) {}
-    /*res*/
