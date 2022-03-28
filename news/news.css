@@ -223,6 +223,10 @@ body {
     color: var(--blog-color);
 }
 
+div {
+    content-visibility: auto;
+}
+
 .blog_post {
     position: relative;
     max-width: 750;
@@ -237,6 +241,7 @@ body {
     margin-top: 60px;
     transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, top 0.15s ease-in-out;
     top: 0px;
+    content-visibility: auto;
 }
 
 .blog_post:hover {
