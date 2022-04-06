@@ -26,17 +26,31 @@ body {
 }
 
 h1 {
+    position: relative;
+    left: 55%;
+    top: 120px;
+    transform: translate(-50%, -50%);
     text-transform: uppercase;
     font-size: 90px;
-    color: #ffffff;
+    color: transparent;
     font-family: 'Press Start 2P', cursive;
-    margin-top: -125px;
+    transition: text-shadow 0.9s;
+    background: linear-gradient(#fd004c 16.7%, #fe9000 16.7%, #fe9000 33.4%, #fff020 33.4%, #fff020 50.1%, #3edf4b 50.1%, #3edf4b 66.8%, #3363ff 66.8%, #3363ff 83.5%, #b102b7 83.8%);
+    -webkit-text-stroke: 0.04em #ffffff;
+    -webkit-background-clip: text;
+    background-clip: text;
+    line-height: 1.1em;
+    animation: rainbow 50s linear infinite;
 }
 
-h1 span {
-    position: relative;
-    margin-left: 50px;
-    top: 150px;
+@keyframes rainbow {
+    100% {
+        background-position: 0 30em;
+    }
+}
+
+h1:hover {
+    text-shadow: 0.04em 0.04em #fc0049, 0.08em 0.08em #fe8f01, 0.12em 0.12em #fdf21f, 0.16em 0.16em #3fdf4b, 0.2em 0.2em #3462fe;
 }
 
 h2 {
@@ -99,20 +113,18 @@ li {
     height: 50px;
 }
 
-@media(max-width: 1700px) {
+@media(max-width: 1532px) {
     .medias {
-        right: 37.5%;
-        top: 42.5%;
-        transform: translateY(-50%);
-        flex-direction: column;
-    }
-}
-
-@media(max-width: 1500px) {
-    .medias {
-        right: 60%;
+        left: 20%;
         top: 58.5%;
         transform: translateY(-50%);
         flex-direction: row;
+    }
+}
+
+@media(max-width: 900px) {
+    h1 {
+        left: 65%;
+        font-size: 80px;
     }
 }
