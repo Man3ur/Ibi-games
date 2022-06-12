@@ -345,7 +345,7 @@ a {
     }
     .wrapper {
         max-width: 325px;
-        margin: 20px auto;
+        margin: 50px 50px;
         color: black;
     }
 }

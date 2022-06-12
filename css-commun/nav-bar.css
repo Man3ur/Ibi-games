@@ -332,10 +332,6 @@ body.dark .home .text {
         font-size: 45px;
         margin-left: -25px;
     }
-    .sidebar header .image,
-    .sidebar .icon {
-        opacity: 0;
-    }
     .medias {
         list-style-type: none;
         position: absolute;
@@ -363,6 +359,9 @@ body.dark .home .text {
     }
     .sidebar.close {
         width: 28px;
+    }
+    .sidebar.close .image {
+        opacity: 0;
     }
     body.dark {
         --sidebar-color: #313131;
