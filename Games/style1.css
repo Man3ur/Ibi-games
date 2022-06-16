@@ -333,12 +333,11 @@ a {
         perspective: 1000px;
         text-align: center;
         margin-right: 20px;
-        margin-left: 50px;
+        margin-left: 5px;
         margin-top: 50px;
-        flex-shrink: 8;
     }
     .tout {
-        margin: 30px auto 0;
+        margin-top: -30px;
     }
     .logo {
         opacity: 0;

@@ -203,8 +203,9 @@ li {
     h1 {
         left: 65%;
         font-size: 80px;
+        top: 50px;
     }
     .icons {
-        margin-top: -200px;
+        margin-top: -110px;
     }
 }

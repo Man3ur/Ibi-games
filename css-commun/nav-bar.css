@@ -329,8 +329,8 @@ body.dark .home .text {
 
 @media(max-width: 800px) {
     h1 {
-        font-size: 45px;
-        margin-left: -25px;
+        font-size: 40px;
+        margin-left: -20px;
     }
     .medias {
         list-style-type: none;
