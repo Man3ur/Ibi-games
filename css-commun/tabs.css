@@ -17,7 +17,7 @@
 .tab {
     border: none;
     background-color: var(--body-color);
-    color: rgb(0, 0, 0);
+    color: rgb(77, 77, 77);
     font-family: Open sans, sans-serif;
     flex-basis: 100%;
     display: flex;
@@ -47,7 +47,7 @@
     min-height: 200px;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.4s ease-out;
+    transition: opacity 1s ease-out;
 }
 
 .tab-content p {
