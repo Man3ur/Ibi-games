@@ -83,9 +83,19 @@
         font-family: Open sans, sans-serif;
         flex-basis: 100%;
         padding: 30px 0;
+        font-size: clamp(14px, 2vw, 15px);
     }
     .tabs {
         margin-left: 5%;
+    }
+    .active-tab {
+        background-image: linear-gradient(45deg, rgb(63, 63, 230), rgb(233, 103, 233));
+        font-weight: bolder;
+        color: #fff
+    }
+    .active-tab-content {
+        visibility: visible;
+        opacity: 1;
     }
 }
 

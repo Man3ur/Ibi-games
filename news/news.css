@@ -413,5 +413,14 @@ ul.skills-list>li {
     }
 }
 
+@media (max-width:800px) {
+    .blog_post {
+        left: 4%;
+    }
+    .post_title {
+        font-size: 23.5px;
+    }
+}
+
 
 /*Embed*/
