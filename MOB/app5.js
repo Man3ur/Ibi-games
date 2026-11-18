@@ -56,8 +56,6 @@ const perfectElement = document.getElementById("perfect");
 const restartButton = document.getElementById("restart");
 const scoreElement = document.getElementById("score");
 
-// Initialize layout
-resetGame();
 
 // Resets game variables and layouts but does not start the game (game starts on keypress)
 function resetGame() {
@@ -150,19 +148,33 @@ window.addEventListener("keydown", function(event) {
     }
 });
 
-window.addEventListener("mousedown", function(event) {
+// Maintenir appuyé (souris, doigt ou touche Entrée) pour allonger le bâton
+function startStretching() {
     if (phase == "waiting") {
         lastTimestamp = undefined;
         introductionElement.style.opacity = 0;
         phase = "stretching";
         window.requestAnimationFrame(animate);
     }
-});
+}
 
-window.addEventListener("mouseup", function(event) {
+function stopStretching() {
     if (phase == "stretching") {
         phase = "turning";
     }
+}
+
+canvas.addEventListener("pointerdown", function(event) {
+    event.preventDefault();
+    startStretching();
+});
+window.addEventListener("pointerup", stopStretching);
+window.addEventListener("pointercancel", stopStretching);
+window.addEventListener("keydown", function(event) {
+    if (event.key == "Enter" && !event.repeat) startStretching();
+});
+window.addEventListener("keyup", function(event) {
+    if (event.key == "Enter") stopStretching();
 });
 
 window.addEventListener("resize", function(event) {

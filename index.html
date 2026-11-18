@@ -4,175 +4,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ibi Games</title>
-    <link rel="shortcut icon" href="/assets/Ibi-games.ico" type="images/png" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/css-commun/nav-bar.css">
-    <link rel="stylesheet" href="/css-commun/wifi.css">
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/56fca625e6.js" crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#0b0b1a">
+    <meta name="description" content="Ibi Games, les jeux et applis du studio indépendant Ibidium : jeux PC, mobile et mini-jeux jouables dans le navigateur.">
+    <title>Ibi Games · Télécharge et joue</title>
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script>try{document.documentElement.dataset.theme=localStorage.getItem("ibi-theme")||(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark")}catch(e){document.documentElement.dataset.theme="dark"}</script>
 </head>
 
-<body>
+<body data-page="home">
 
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">Studio indé · Ibidium</span>
+                    <h1 class="rainbow-title">Télécharge<br>&amp; joue</h1>
+                    <p class="hero-lead">Les jeux et applis créés par Ibidium : des jeux PC, bientôt sur mobile, et des mini-jeux à lancer directement dans ton navigateur.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn--primary" href="Games.html"><i data-icon="gamepad"></i>Voir les jeux</a>
+                        <a class="btn" href="Games.html#arcade"><i data-icon="play"></i>Jouer maintenant</a>
+                    </div>
 
-    <!--Mobile-->
-    <div class="mobile"><a href="#Mobile">Passer sur L'App</a></div>
+                    <div class="socials" aria-label="Réseaux sociaux">
+                        <a class="social social--yt" href="https://www.youtube.com/channel/UCZjLqhss2igD9YZu-V-xcXg" target="_blank" rel="noopener">
+                            <div class="layer"><span></span><span></span><span></span><span></span><span><i data-icon="youtube"></i></span></div>
+                            <span class="label">YouTube</span>
+                        </a>
+                        <a class="social social--discord" href="https://discord.com/invite/AKcMAGmQmr" target="_blank" rel="noopener">
+                            <div class="layer"><span></span><span></span><span></span><span></span><span><i data-icon="discord"></i></span></div>
+                            <span class="label">Discord</span>
+                        </a>
+                        <a class="social social--paypal" href="https://www.paypal.com/paypalme/aimbotyt" target="_blank" rel="noopener">
+                            <div class="layer"><span></span><span></span><span></span><span></span><span><i data-icon="paypal"></i></span></div>
+                            <span class="label">PayPal</span>
+                        </a>
+                    </div>
+                </div>
 
-
-    <div id="Mobile" class="modal">
-        <div class="modal_content">
-            <h6>Passer sur la version mobile</h6>
-
-            <a href="">
-                <p>Download</p>
-            </a>
-
-            <a href="#" class="modal_close">&times;</a>
-        </div>
-    </div>
-
-    <!--Mobile-->
-
-    <div class="connections">
-        <div class="connection offline">
-            <i class="material-icons wifi-off">wifi_off</i>
-            <p>you are currently offline</p>
-            <a href="#" class="refreshBtn">Refresh</a>
-            <i class="material-icons close">close</i>
-        </div>
-        <div class="connection online">
-            <i class="material-icons wifi">wifi</i>
-            <p>your Internet connection was restored</p>
-            <i class="material-icons close">close</i>
-        </div>
-    </div>
-
-    <nav class="sidebar close">
-        <header>
-            <div class="image-text">
-                <span class="image">
-                    <img src="/icon.png" alt="">
-                </span>
-
-                <div class="text logo-text">
-                    <span class="name">Ibi-Games</span>
-                    <span class="profession">© 2022 Ibidium</span>
+                <div class="hero-art">
+                    <div class="orbit"></div>
+                    <div class="orbit"></div>
+                    <!-- Easter egg : l'alien mène au jeu caché -->
+                    <a class="alien-egg" href="the-alien-fly.html" aria-label="Jeu caché : The Alien Fly">
+                        <img class="pixel" src="assets/img/alien.png" alt="" width="62" height="60">
+                        <span class="bubble">Clique-moi !</span>
+                    </a>
                 </div>
             </div>
+        </section>
 
-            <i class='bx bx-chevron-right toggle'></i>
-        </header>
-
-        <div class="menu-bar">
-            <div class="menu">
-
-                <ul class="search-box">
-                    <li class="boxx">
-                        <a href="https://ibi-games.tk/">
-                            <i class='bx bx-home-alt icon'></i>
-                            <span class="text nav-text">Home</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="/Games">
-                            <i class='bx bx-game icon'></i>
-                            <span class="text nav-text">Games</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="/Contact-me">
-                            <i class='bx bxs-contact icon'></i>
-                            <span class="text nav-text">Contact</span>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="Video">
-                            <i class='bx bx-video icon'></i>
-                            <span class="text nav-text">Video</span>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="/news">
-                            <i class='bx bx-news icon'></i>
-                            <span class="text nav-text">News</span>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-
-            <div class="bottom-content">
-
-                <li class="mode">
-                    <div class="sun-moon">
-                        <i class='bx bx-moon icon moon'></i>
-                        <i class='bx bx-sun icon sun'></i>
+        <!-- À la une -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div>
+                        <span class="eyebrow">À la une</span>
+                        <h2 class="section-title">Nos jeux et applis</h2>
                     </div>
-                    <span id class="mode-text text">Dark mode</span>
-
-                    <div class="toggle-switch">
-                        <span class="switch"></span>
-                    </div>
-                </li>
-
+                    <a class="link" href="Games.html">Tout voir →</a>
+                </div>
+                <div class="grid" id="featured"></div>
             </div>
+        </section>
+
+        <!-- Dernière vidéo + dernière actu -->
+        <section class="section" style="padding-top:0">
+            <div class="container split">
+                <div class="reveal">
+                    <div class="section-head">
+                        <div>
+                            <span class="eyebrow">Dernière vidéo</span>
+                            <h2 class="section-title">Sur la chaîne</h2>
+                        </div>
+                        <a class="link" href="Video.html">Toutes les vidéos →</a>
+                    </div>
+                    <div class="video" data-id="AnT-uiOojKc" data-title="Dernière vidéo Ibi Games"></div>
+                </div>
+                <div class="reveal">
+                    <div class="section-head">
+                        <div>
+                            <span class="eyebrow">Actus</span>
+                            <h2 class="section-title">Quoi de neuf ?</h2>
+                        </div>
+                    </div>
+                    <article class="panel post" style="margin:0">
+                        <time datetime="2022-03-26">26 mars 2022</time>
+                        <h3 style="font-size:1.3rem;margin:6px 0 10px">Le lancement des sites</h3>
+                        <p class="muted">C'est le lancement officiel d'Ibidium : les deux sites sont terminés. Un grand merci à toute l'équipe !</p>
+                        <p style="margin-top:16px"><a class="link" href="news.html">Lire les actus →</a></p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appli mobile -->
+        <section class="section" style="padding-top:0">
+            <div class="container">
+                <div class="panel app-banner reveal">
+                    <div>
+                        <span class="eyebrow">Version mobile</span>
+                        <h2>Ibi Games dans ta poche</h2>
+                        <p class="muted">Retrouve nos jeux sur ton téléphone avec l'appli Ibi Games.</p>
+                    </div>
+                    <button class="btn btn--primary" type="button" data-open-modal="mobile-modal"><i data-icon="phone"></i>Passer sur l'appli</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <dialog class="modal" id="mobile-modal" aria-labelledby="mobile-modal-title">
+        <button class="icon-btn modal-close" type="button" data-close-modal aria-label="Fermer"><i data-icon="close"></i></button>
+        <h2 id="mobile-modal-title">Passer sur la version mobile</h2>
+        <p>L'appli Ibi Games arrive bientôt sur le Google Play Store. En attendant, les mini-jeux de l'arcade fonctionnent aussi sur téléphone.</p>
+        <div class="contact-actions">
+            <a class="btn btn--primary" href="#" aria-disabled="true"><i data-icon="download"></i>Bientôt disponible</a>
+            <a class="btn" href="Games.html#arcade">Ouvrir l'arcade</a>
         </div>
+    </dialog>
 
-    </nav>
-
-    <div class="container-first">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-        </style>
-        <h1>Download and play</h1>
-    </div>
-    </div>
-
-    <a href="/the-alien-fly"><img src="IMG/Logo.png" class="logo">
-</body>
-</a>
-
-<div class="icons">
-    <a href="https://www.youtube.com/channel/UCZjLqhss2igD9YZu-V-xcXg" target="_blank" rel="noopener noreferrer">
-
-        <div class="layer"> <span></span><span></span><span></span><span></span><span class="fab fa-youtube">
-            </span></div>
-        <div class="text">Youtube</div>
-    </a>
-
-    <!--icon 2-->
-    <a href="https://discord.com/invite/AKcMAGmQmr" target="_blank" rel="noopener noreferrer">
-
-        <div class="layer"><span></span><span></span><span></span><span></span><span class="fab fa-discord">
-            </span></div>
-        <div class="text">Discord</div>
-    </a>
-
-    <!--icon 3-->
-    <a href="https://www.paypal.com/paypalme/aimbotyt" target="_blank" rel="noopener noreferrer">
-
-        <div class="layer"> <span></span><span></span><span></span><span></span><span class="fab fa-paypal">
-            </span></div>
-        <div class="text">Paypal</div>
-    </a>
-</div>
-
-
-
-
-<h3 style="margin-top: -200px;">© 2022 Ibidium</h3>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-<script src="/app.js"></script>
-<script src="/JS-commun/theme.js"></script>
-<script src="/JS-commun/DarkMode.js"></script>
-<script src="/JS-commun/wifi.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/games-data.js"></script>
+    <script>
+        // Cartes « À la une » générées depuis la liste des jeux
+        document.getElementById("featured").innerHTML = GAMES.filter((g) => g.featured).map((g) => {
+            const href = g.links.play || "Games.html#" + g.category;
+            const art = g.image ? `<img class="pixel" src="${g.image}" alt="">` : `<span style="font-size:3rem">${CATEGORIES[g.category].emoji}</span>`;
+            return `
+                <a class="panel feature reveal is-visible" href="${href}">
+                    <div class="feature-art" style="--art:${g.art}">${art}</div>
+                    <h3>${g.title}</h3>
+                    <p>${g.description}</p>
+                    <div class="tags">${g.tags.map((t) => `<span class="tag">${t}</span>`).join("")}</div>
+                </a>`;
+        }).join("");
+    </script>
 </body>
 
 </html>
