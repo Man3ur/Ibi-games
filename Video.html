@@ -1,131 +1,42 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="Vidéo/video.css">
-    <link rel="stylesheet" href="/css-commun/loader.css">
-    <link rel="stylesheet" href="/css-commun/nav-bar.css">
-    <link rel="stylesheet" href="/css-commun/wifi.css">
-    <link rel="stylesheet" href="/css-commun/scrollBar.css">
-    <link rel="shortcut icon" href="/assets/Ibi-games.ico" type="images/png" />
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ibi Games</title>
+    <meta name="theme-color" content="#0b0b1a">
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script>try{document.documentElement.dataset.theme=localStorage.getItem("ibi-theme")||(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark")}catch(e){document.documentElement.dataset.theme="dark"}</script>
+    <meta name="description" content="Les vidéos Ibi Games : gameplays, démos et coulisses.">
+    <title>Vidéos · Ibi Games</title>
 </head>
 
-<body>
+<body data-page="videos">
 
-    <div id="preloader"></div>
+    <div id="preloader"><div class="loader-dots"><span></span><span></span><span></span></div></div>
 
-    <nav class="sidebar close">
-        <header>
-            <div class="image-text">
-                <span class="image">
-                    <img src="/icon.png" alt="">
-                </span>
+    <main>
+        <section class="page-hero container">
+            <span class="eyebrow">YouTube</span>
+            <h1>Vidéos</h1>
+            <p>Gameplays, démos et coulisses. Abonne-toi à la chaîne pour ne rien rater.</p>
+            <p style="margin-top:22px"><a class="btn btn--primary" href="https://www.youtube.com/channel/UCZjLqhss2igD9YZu-V-xcXg" target="_blank" rel="noopener"><i data-icon="youtube"></i>S'abonner à la chaîne</a></p>
+        </section>
 
-                <div class="text logo-text">
-                    <span class="name">Ibi-Games</span>
-                    <span class="profession">© 2022 Ibidium</span>
-                </div>
-            </div>
+        <section class="container video-grid">
+            <!-- Pour ajouter une vidéo : copie une ligne et remplace data-id par l'identifiant YouTube -->
+            <div class="video reveal" data-id="AnT-uiOojKc" data-title="Vidéo 4"></div>
+            <div class="video reveal" data-id="XTTG7_iqX9c" data-title="Vidéo 3"></div>
+            <div class="video reveal" data-id="Qn2VCCrskxM" data-title="Vidéo 2"></div>
+            <div class="video reveal" data-id="va0aezu2Kys" data-title="Vidéo 1"></div>
+        </section>
+    </main>
 
-            <i class='bx bx-chevron-right toggle'></i>
-        </header>
-
-        <div class="menu-bar">
-            <div class="menu">
-
-                <ul class="search-box">
-                    <li class="box">
-                        <a href="https://ibi-games.tk/">
-                            <i class='bx bx-home-alt icon'></i>
-                            <span class="text nav-text">Home</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="/Games">
-                            <i class='bx bx-game icon'></i>
-                            <span class="text nav-text">Games</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="/Contact-me">
-                            <i class='bx bxs-contact icon'></i>
-                            <span class="text nav-text">Contact</span>
-                        </a>
-                    </li>
-                    <li class="boxx">
-                        <a href="/Video">
-                            <i class='bx bx-video icon'></i>
-                            <span class="text nav-text">Video</span>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="/news">
-                            <i class='bx bx-news icon'></i>
-                            <span class="text nav-text">News</span>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-
-            <div class="bottom-content">
-
-
-                <li class="mode">
-                    <div class="sun-moon">
-                        <i class='bx bx-moon icon moon'></i>
-                        <i class='bx bx-sun icon sun'></i>
-                    </div>
-                    <span id class="mode-text text">Dark mode</span>
-
-                    <div class="toggle-switch">
-                        <span class="switch"></span>
-                    </div>
-                </li>
-
-            </div>
-        </div>
-
-    </nav>
-    <div class="videos">
-        <!--video 4-->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/AnT-uiOojKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <!--video 4-->
-        <!--video 3-->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/XTTG7_iqX9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <!--video 3-->
-        <!--video 2-->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Qn2VCCrskxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <!--video 2-->
-        <!--video 1-->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/va0aezu2Kys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <!--video 1-->
-        <!--video 4-->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/AnT-uiOojKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <!--video 4-->
-        <!--video 3-->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/XTTG7_iqX9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <!--video 3-->
-        <!--video 2-->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Qn2VCCrskxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <!--video 2-->
-        <!--video 1-->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/va0aezu2Kys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <!--video 1-->
-    </div>
-
-    <h3 style="bottom: 90%;">© 2022 Ibidium</h3>
-
-    <script src="/JS-commun/LocalStorage.js"></script>
-    <script src="/JS-commun/DarkMode.js"></script>
-    <script src="/JS-commun/wifi.js"></script>
-    <script src="/JS-commun/loader.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
